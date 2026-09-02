@@ -2,6 +2,16 @@
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Faraz%20Hussain&fontSize=50&fontColor=ffffff&animation=none&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20Karachi,%20Pakistan&descAlignY=55&descSize=18" width="100%" alt="Faraz Hussain Header Banner"/>
+
+  <a href="https://www.linkedin.com/in/faraz-hussain-mirbahar/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:farazhussain5000@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://github.com/asteroidcrib729" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-4E5EE4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
 </div>
 
 ---
