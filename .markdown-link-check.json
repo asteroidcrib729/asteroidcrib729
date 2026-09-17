@@ -1,0 +1,17 @@
+{
+  "fallbackRetryDelay": "10s",
+  "retryCount": 3,
+  "retryOn429": true,
+  "timeout": "20s",
+  "ignorePatterns": [
+    {
+      "pattern": "^mailto:"
+    },
+    {
+      "pattern": "^https://www\\.linkedin\\.com/"
+    },
+    {
+      "pattern": "^https://raw\\.githubusercontent\\.com/asteroidcrib729/asteroidcrib729/gh-pages/"
+    }
+  ]
+}

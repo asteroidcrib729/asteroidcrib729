@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD013 MD033 MD041 -->
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Faraz%20Hussain&fontSize=50&fontColor=ffffff&animation=none&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20Karachi,%20Pakistan&descAlignY=55&descSize=18" width="100%" alt="Faraz Hussain Header Banner"/>
 
@@ -101,9 +99,7 @@ const Faraz_Hussain = {
 
 <div align="center">
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=asteroidcrib729&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="155" alt="Faraz's GitHub Stats"/>
-  <img src="https://streak-stats.demolab.com/?user=asteroidcrib729&theme=tokyonight&hide_border=true" height="155" alt="GitHub Streak Stats"/>
-  <br/><br/>
-  <img src="./languages.svg" height="65" alt="Most Used Languages"/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=asteroidcrib729&layout=compact&theme=tokyonight&hide_border=true" height="155" alt="Most Used Languages"/>
 </div>
 
 ---
@@ -111,7 +107,11 @@ const Faraz_Hussain = {
 ## 📈 Contribution Activity
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/asteroidcrib729/asteroidcrib729/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake Animation"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/asteroidcrib729/asteroidcrib729/gh-pages/github-contribution-grid-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/asteroidcrib729/asteroidcrib729/gh-pages/github-contribution-grid-snake.svg"/>
+    <img src="https://raw.githubusercontent.com/asteroidcrib729/asteroidcrib729/gh-pages/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake Animation"/>
+  </picture>
 </div>
 
 ---

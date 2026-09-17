@@ -8,24 +8,35 @@ on:
     branches:
       - main
 
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
     steps:
       - name: Generate Snake SVG
-        uses: Platane/snk@v3
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: asteroidcrib729
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push Snake to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Push Snake to gh-pages branch
+        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
         with:
-          target_branch: output
+          target_branch: gh-pages
           build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          jekyll: false
+          author: Faraz Hussain <farazhussain5000@gmail.com>
+          committer: Faraz Hussain <farazhussain5000@gmail.com>
+          commit_message: "chore: update contribution snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
