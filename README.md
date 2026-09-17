@@ -9,7 +9,7 @@
   <a href="mailto:farazhussain5000@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://github.com/asteroidcrib729" target="_blank">
+  <a href="https://faraz-hussain-portfolio.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-4E5EE4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
   </a>
 </div>
