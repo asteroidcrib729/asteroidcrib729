@@ -1,0 +1,70 @@
+<svg
+  width="795"
+  height="65"
+  viewBox="0 0 795 65"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    .lang-name {
+      font: 400 11.5px 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
+      fill: #38bdae;
+    }
+  </style>
+
+  <rect
+    x="0.5"
+    y="0.5"
+    rx="4.5"
+    width="794"
+    height="64"
+    fill="#1a1b27"
+    stroke-opacity="0"
+  />
+
+  <g transform="translate(25, 18)">
+    <mask id="rect-mask">
+      <rect x="0" y="0" width="745" height="8" fill="white" rx="4" />
+    </mask>
+
+    <!-- Progress Bar Segments -->
+    <rect mask="url(#rect-mask)" x="0" y="0" width="342.4" height="8" fill="#00BFFF" />
+    <rect mask="url(#rect-mask)" x="342.4" y="0" width="272.3" height="8" fill="#35C759" />
+    <rect mask="url(#rect-mask)" x="614.7" y="0" width="53.6" height="8" fill="#DA5B0B" />
+    <rect mask="url(#rect-mask)" x="668.3" y="0" width="39.6" height="8" fill="#FFFF00" />
+    <rect mask="url(#rect-mask)" x="707.9" y="0" width="37.1" height="8" fill="#9370DB" />
+  </g>
+
+  <!-- Single Horizontal Row of Languages -->
+  <g transform="translate(0, 46)">
+    <!-- TypeScript -->
+    <g transform="translate(65, 0)">
+      <circle cx="5" cy="-4" r="5" fill="#00BFFF" />
+      <text x="15" y="0" class="lang-name">TypeScript (45.96%)</text>
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(215, 0)">
+      <circle cx="5" cy="-4" r="5" fill="#35C759" />
+      <text x="15" y="0" class="lang-name">Python (36.55%)</text>
+    </g>
+
+    <!-- Jupyter Notebook -->
+    <g transform="translate(355, 0)">
+      <circle cx="5" cy="-4" r="5" fill="#DA5B0B" />
+      <text x="15" y="0" class="lang-name">Jupyter Notebook (7.20%)</text>
+    </g>
+
+    <!-- C++ -->
+    <g transform="translate(535, 0)">
+      <circle cx="5" cy="-4" r="5" fill="#FFFF00" />
+      <text x="15" y="0" class="lang-name">C++ (5.32%)</text>
+    </g>
+
+    <!-- CSS -->
+    <g transform="translate(650, 0)">
+      <circle cx="5" cy="-4" r="5" fill="#9370DB" />
+      <text x="15" y="0" class="lang-name">CSS (4.97%)</text>
+    </g>
+  </g>
+</svg>
