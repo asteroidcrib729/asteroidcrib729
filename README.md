@@ -86,12 +86,12 @@ const Faraz_Hussain = {
 
 | Project | What it does |
 | :--- | :--- |
-| **[chatwell-therapist-bot](https://github.com/asteroidcrib729/chatwell-therapist-bot)** | AI therapist chatbot implementing retrieval-augmented conversational assistance with a vector database (ChromaDB) |
-| **[cold-mailing-tool](https://github.com/asteroidcrib729/cold-mailing-tool)** | Automated cold outreach tool leveraging Google Generative AI / Gemini API to generate personalized B2B email campaigns |
-| **[encryption-tool-python](https://github.com/asteroidcrib729/encryption-tool-python)** | Public/private key data encryption tool implementing cryptographic cipher algorithms in Python |
-| **[network-packet-sniffer](https://github.com/asteroidcrib729/network-packet-sniffer)** | Network traffic visualizer demonstrating packet capture and inspection using Python and Scapy |
-| **[smart-road-vision-system](https://github.com/asteroidcrib729/smart-road-vision-system)** | Final Year Project: AI computer vision system to assist traffic enforcement in detecting helmetless riders and unreadable plates |
-| **[tvs-next-web-app](https://github.com/asteroidcrib729/tvs-next-web-app)** | Modern full-stack web application built with Next.js, TypeScript, Tailwind CSS, and Prisma ORM |
+| **[Chatwell Therapist Bot](https://github.com/asteroidcrib729/chatwell-therapist-bot)** | AI therapist chatbot implementing retrieval-augmented conversational assistance with a vector database (ChromaDB) |
+| **[Cold Mailing Tool](https://github.com/asteroidcrib729/cold-mailing-tool)** | Automated cold outreach tool leveraging Google Generative AI / Gemini API to generate personalized B2B email campaigns |
+| **[Encryption Tool (Python)](https://github.com/asteroidcrib729/encryption-tool-python)** | Public/private key data encryption tool implementing cryptographic cipher algorithms in Python |
+| **[Network Packet Sniffer](https://github.com/asteroidcrib729/network-packet-sniffer)** | Network traffic visualizer demonstrating packet capture and inspection using Python and Scapy |
+| **[Smart Road Vision System](https://github.com/asteroidcrib729/smart-road-vision-system)** | Final Year Project: AI computer vision system to assist traffic enforcement in detecting helmetless riders and unreadable plates |
+| **[Portfolio Website](https://github.com/asteroidcrib729/portfolio-next-web-app)** | Full-stack engineering portfolio as a polished, accessible, privacy-aware case study in modern product development |
 
 ---
 
