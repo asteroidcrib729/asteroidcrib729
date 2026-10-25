@@ -1,19 +1,19 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3192,100:1BFFFF&height=200&section=header&text=Faraz%20Hussain&fontSize=50&fontColor=ffffff&animation=none&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20Karachi,%20Pakistan&descAlignY=55&descSize=18" width="100%" alt="Faraz Hussain Header Banner"/>
 
-  <a href="https://www.linkedin.com/in/faraz-hussain-mirbahar/" target="_blank">
+  <a href="https://www.linkedin.com/in/faraz-hussain-mirbahar/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:farazhussain5000@gmail.com">
+  <a href="mailto:farazhussain5000@gmail.com" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://faraz-hussain-portfolio.vercel.app/" target="_blank">
+  <a href="https://faraz-hussain-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Portfolio-4E5EE4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
   </a>
-  <a href="https://www.instagram.com/asteroidcrib729/" target="_blank">
+  <a href="https://www.instagram.com/asteroidcrib729/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
   </a>
-  <a href="https://x.com/asteroidcrib729" target="_blank">
+  <a href="https://x.com/asteroidcrib729" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"/>
   </a>
 </div>

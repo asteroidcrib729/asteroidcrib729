@@ -165,8 +165,8 @@ function card(title, description, body, metrics, footnote) {
   <rect width="480" height="284" rx="8" fill="#1a1b27"/>
   <g font-family="Segoe UI, Arial, sans-serif">
     <g transform="translate(0 -36)">${body}</g>
-    <text x="24" y="247" fill="#a9b1d6" font-size="11">${escape(footnote)}</text>
-    <text x="24" y="267" fill="#a9b1d6" font-size="11">Updated ${escape(stamp)} UTC · Refresh every 12 hours</text>
+    <text x="240" y="247" text-anchor="middle" fill="#a9b1d6" font-size="11">${escape(footnote)}</text>
+    <text x="240" y="267" text-anchor="middle" fill="#a9b1d6" font-size="11">Updated ${escape(stamp)} UTC · Refresh every 12 hours</text>
   </g>
 </svg>
 `;

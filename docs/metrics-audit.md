@@ -165,6 +165,15 @@ other authors' commits to my account. Existing history has not been rewritten.
 
 ## Verification
 
+The top badge links declare `target="_blank"` and `rel="noopener noreferrer"`
+in the README source. GitHub's Markdown renderer removes those attributes from
+the five destination links. I verified the rendered HTML through GitHub's
+Markdown API; the new-tab image-viewer link it adds to the unlinked banner is
+separate from the social links. GitHub's [markup pipeline](https://github.com/github/markup)
+sanitizes rendered HTML, so the repository cannot enforce new-tab navigation
+on the GitHub profile. Ctrl-click or middle-click opens web destinations in a
+new tab; the email link uses the browser's configured mail handler.
+
 I added regression checks for UTC year rollover, contribution-versus-commit
 separation, repository pagination, language denominators, SVG escaping, empty
 language data, API errors, invalid counts, restricted activity, truncated
