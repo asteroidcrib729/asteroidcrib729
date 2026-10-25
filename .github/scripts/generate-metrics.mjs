@@ -159,15 +159,14 @@ const colors = ['#7aa2f7', '#2ac3de', '#e0af68', '#bb9af7', '#9ece6a', '#64748b'
 
 function card(title, description, body, metrics, footnote) {
   const stamp = metrics.generatedAt.slice(0, 16).replace('T', ' ');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="284" viewBox="0 0 480 284" role="img" aria-labelledby="title desc">
   <title id="title">${escape(title)}</title>
   <desc id="desc">${escape(description)}</desc>
-  <rect width="480" height="320" rx="8" fill="#1a1b27"/>
+  <rect width="480" height="284" rx="8" fill="#1a1b27"/>
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="24" y="36" fill="#7aa2f7" font-size="21" font-weight="600">${escape(title)}</text>
-    ${body}
-    <text x="24" y="283" fill="#a9b1d6" font-size="11">${escape(footnote)}</text>
-    <text x="24" y="303" fill="#a9b1d6" font-size="11">Updated ${escape(stamp)} UTC · Refresh every 12 hours</text>
+    <g transform="translate(0 -36)">${body}</g>
+    <text x="24" y="247" fill="#a9b1d6" font-size="11">${escape(footnote)}</text>
+    <text x="24" y="267" fill="#a9b1d6" font-size="11">Updated ${escape(stamp)} UTC · Refresh every 12 hours</text>
   </g>
 </svg>
 `;

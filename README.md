@@ -112,8 +112,8 @@ const Faraz_Hussain = {
 ## 📊 GitHub Activity & Metrics
 
 <div align="center">
-  <img src="./assets/github-stats.svg" width="480" alt="Faraz's calendar-year GitHub contributions and calculated legacy rating with a progress ring"/>
-  <img src="./assets/github-languages.svg" width="480" alt="Language byte distribution across my public, owned, non-fork repositories"/>
+  <img src="./assets/github-stats.svg" width="49%" alt="Faraz's calendar-year GitHub contributions and calculated legacy rating with a progress ring"/>
+  <img src="./assets/github-languages.svg" width="49%" alt="Language byte distribution across my public, owned, non-fork repositories"/>
 </div>
 
 I refresh these snapshots every 12 hours from GitHub's API; each card shows its update time.
