@@ -5,22 +5,53 @@ on:
     branches:
       - main
     paths:
-      - "README.md"
-      - ".markdownlint.json"
-      - ".markdown-link-check.json"
-      - ".github/workflows/validate.yml"
+      - 'README.md'
+      - 'docs/**'
+      - 'assets/**'
+      - '.github/scripts/**'
+      - '.github/workflows/metrics.yml'
+      - '.github/workflows/snake.yml'
+      - '.markdownlint.json'
+      - '.markdown-link-check.json'
+      - '.github/workflows/validate.yml'
+      - '.github/workflows/prettier.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.prettierrc.json'
+      - '.prettierignore'
+      - '.gitattributes'
+      - '.gitignore'
   pull_request:
     paths:
-      - "README.md"
-      - ".markdownlint.json"
-      - ".markdown-link-check.json"
-      - ".github/workflows/validate.yml"
+      - 'README.md'
+      - 'docs/**'
+      - 'assets/**'
+      - '.github/scripts/**'
+      - '.github/workflows/metrics.yml'
+      - '.github/workflows/snake.yml'
+      - '.markdownlint.json'
+      - '.markdown-link-check.json'
+      - '.github/workflows/validate.yml'
+      - '.github/workflows/prettier.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.prettierrc.json'
+      - '.prettierignore'
+      - '.gitattributes'
+      - '.gitignore'
   schedule:
-    - cron: "17 6 * * 1"
+    - cron: '17 6 * * 1'
   workflow_dispatch:
 
 permissions:
   contents: read
+
+# Validation is read-only; any future Git commit steps inherit this identity.
+env:
+  GIT_AUTHOR_NAME: Faraz Hussain
+  GIT_AUTHOR_EMAIL: farazhussain5000@gmail.com
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
 
 jobs:
   markdown:
@@ -32,7 +63,10 @@ jobs:
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Lint README
-        run: npx --yes markdownlint-cli2@0.23.2 README.md
+        run: npx --yes markdownlint-cli2@0.23.2 README.md "docs/**/*.md"
+
+      - name: Test metric definitions and generation
+        run: node --test .github/scripts/*.test.mjs
 
   links:
     name: Link check
@@ -43,4 +77,7 @@ jobs:
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Check README links
-        run: npx --yes markdown-link-check@3.15.0 --config .markdown-link-check.json README.md
+        run: |
+          npx --yes markdown-link-check@3.15.0 --config .markdown-link-check.json README.md
+          npx --yes markdown-link-check@3.15.0 --config .markdown-link-check.json docs/metrics-audit.md
+          npx --yes markdown-link-check@3.15.0 --config .markdown-link-check.json docs/formatting.md

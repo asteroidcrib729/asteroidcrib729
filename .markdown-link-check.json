@@ -9,9 +9,6 @@
     },
     {
       "pattern": "^https://www\\.linkedin\\.com/"
-    },
-    {
-      "pattern": "^https://raw\\.githubusercontent\\.com/asteroidcrib729/asteroidcrib729/gh-pages/"
     }
   ]
 }

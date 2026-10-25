@@ -2,23 +2,36 @@ name: Generate Snake Contribution Grid
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
+    - cron: '0 */12 * * *' # Runs every 12 hours
   workflow_dispatch:
   push:
     branches:
       - main
 
+# Credit the repository owner while recording the automation as committer.
+env:
+  GIT_AUTHOR_NAME: Faraz Hussain
+  GIT_AUTHOR_EMAIL: farazhussain5000@gmail.com
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
 concurrency:
-  group: contribution-snake
-  cancel-in-progress: true
+  group: profile-generated-assets
+  cancel-in-progress: false
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
     steps:
+      - name: Check out repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+
       - name: Generate Snake SVG
         uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
@@ -27,16 +40,13 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push Snake to gh-pages branch
-        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
-        with:
-          target_branch: gh-pages
-          build_dir: dist
-          keep_history: true
-          allow_empty_commit: false
-          jekyll: false
-          author: Faraz Hussain <farazhussain5000@gmail.com>
-          committer: Faraz Hussain <farazhussain5000@gmail.com>
-          commit_message: "chore: update contribution snake"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit refreshed snake on the default branch
+        run: |
+          mkdir -p assets
+          cp dist/github-contribution-grid-snake.svg assets/github-contribution-grid-snake.svg
+          cp dist/github-contribution-grid-snake-dark.svg assets/github-contribution-grid-snake-dark.svg
+          git add -- assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update contribution snake"
+            git push origin HEAD:main
+          fi

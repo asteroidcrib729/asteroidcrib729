@@ -1,0 +1,62 @@
+name: Refresh GitHub Metrics and Featured Projects
+
+on:
+  schedule:
+    - cron: '23 */12 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/**'
+      - '.github/workflows/metrics.yml'
+
+permissions:
+  contents: read
+
+# Credit the repository owner while recording the automation as committer.
+env:
+  GIT_AUTHOR_NAME: Faraz Hussain
+  GIT_AUTHOR_EMAIL: farazhussain5000@gmail.com
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
+concurrency:
+  group: profile-generated-assets
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: main
+
+      - name: Test profile generation and attribution
+        run: node --test .github/scripts/*.test.mjs
+
+      - name: Generate public metrics
+        run: node .github/scripts/generate-metrics.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Sync Featured Projects from profile pins
+        run: node .github/scripts/update-featured-projects.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Lint generated README
+        run: npx --yes markdownlint-cli2@0.23.2 README.md
+
+      - name: Commit refreshed profile content
+        run: |
+          git add -- README.md assets/github-stats.svg assets/github-languages.svg assets/github-metrics.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh GitHub metrics and pinned projects"
+            git push origin HEAD:main
+          fi

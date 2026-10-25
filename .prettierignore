@@ -1,0 +1,6 @@
+node_modules/
+dist/
+
+# npm maintains the lockfile; generators own the SVG snapshots.
+package-lock.json
+assets/**/*.svg

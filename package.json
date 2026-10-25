@@ -1,0 +1,16 @@
+{
+  "name": "asteroidcrib729-profile",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test .github/scripts/*.test.mjs"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}
