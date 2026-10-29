@@ -3,30 +3,30 @@
   <desc id="desc">Share of all detected language bytes; top five plus other.</desc>
   <rect width="480" height="284" rx="8" fill="#1a1b27"/>
   <g font-family="Segoe UI, Arial, sans-serif">
-    <g transform="translate(0 -36)"><rect x="24.000" y="58" width="195.124" height="12" fill="#7aa2f7"/>
-    <rect x="219.124" y="58" width="146.028" height="12" fill="#2ac3de"/>
-    <rect x="365.152" y="58" width="29.516" height="12" fill="#e0af68"/>
-    <rect x="394.669" y="58" width="27.568" height="12" fill="#bb9af7"/>
-    <rect x="422.237" y="58" width="14.605" height="12" fill="#9ece6a"/>
-    <rect x="436.842" y="58" width="19.158" height="12" fill="#64748b"/><circle cx="30" cy="99" r="5" fill="#7aa2f7"/>
+    <g transform="translate(0 -36)"><rect x="24.000" y="58" width="194.310" height="12" fill="#7aa2f7"/>
+    <rect x="218.310" y="58" width="145.417" height="12" fill="#2ac3de"/>
+    <rect x="363.727" y="58" width="30.042" height="12" fill="#e0af68"/>
+    <rect x="393.769" y="58" width="28.593" height="12" fill="#bb9af7"/>
+    <rect x="422.362" y="58" width="14.534" height="12" fill="#9ece6a"/>
+    <rect x="436.896" y="58" width="19.104" height="12" fill="#64748b"/><circle cx="30" cy="99" r="5" fill="#7aa2f7"/>
     <text x="44" y="104" fill="#a9b1d6" font-size="14">Python</text>
-    <text x="448" y="104" text-anchor="end" fill="#2ac3de" font-size="14">45.17%</text>
+    <text x="448" y="104" text-anchor="end" fill="#2ac3de" font-size="14">44.98%</text>
     <circle cx="30" cy="127" r="5" fill="#2ac3de"/>
     <text x="44" y="132" fill="#a9b1d6" font-size="14">TypeScript</text>
-    <text x="448" y="132" text-anchor="end" fill="#2ac3de" font-size="14">33.80%</text>
+    <text x="448" y="132" text-anchor="end" fill="#2ac3de" font-size="14">33.66%</text>
     <circle cx="30" cy="155" r="5" fill="#e0af68"/>
     <text x="44" y="160" fill="#a9b1d6" font-size="14">Rust</text>
-    <text x="448" y="160" text-anchor="end" fill="#2ac3de" font-size="14">6.83%</text>
+    <text x="448" y="160" text-anchor="end" fill="#2ac3de" font-size="14">6.95%</text>
     <circle cx="30" cy="183" r="5" fill="#bb9af7"/>
     <text x="44" y="188" fill="#a9b1d6" font-size="14">JavaScript</text>
-    <text x="448" y="188" text-anchor="end" fill="#2ac3de" font-size="14">6.38%</text>
+    <text x="448" y="188" text-anchor="end" fill="#2ac3de" font-size="14">6.62%</text>
     <circle cx="30" cy="211" r="5" fill="#9ece6a"/>
     <text x="44" y="216" fill="#a9b1d6" font-size="14">PowerShell</text>
-    <text x="448" y="216" text-anchor="end" fill="#2ac3de" font-size="14">3.38%</text>
+    <text x="448" y="216" text-anchor="end" fill="#2ac3de" font-size="14">3.36%</text>
     <circle cx="30" cy="239" r="5" fill="#64748b"/>
     <text x="44" y="244" fill="#a9b1d6" font-size="14">Other</text>
-    <text x="448" y="244" text-anchor="end" fill="#2ac3de" font-size="14">4.43%</text></g>
+    <text x="448" y="244" text-anchor="end" fill="#2ac3de" font-size="14">4.42%</text></g>
     <text x="240" y="247" text-anchor="middle" fill="#a9b1d6" font-size="11">15 owned public non-fork repos · All detected bytes</text>
-    <text x="240" y="267" text-anchor="middle" fill="#a9b1d6" font-size="11">Updated 2026-10-28 18:23 UTC · Refresh every 12 hours</text>
+    <text x="240" y="267" text-anchor="middle" fill="#a9b1d6" font-size="11">Updated 2026-10-29 05:56 UTC · Refresh every 12 hours</text>
   </g>
 </svg>
