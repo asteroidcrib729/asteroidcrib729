@@ -9,6 +9,9 @@
     },
     {
       "pattern": "^https://www\\.linkedin\\.com/"
+    },
+    {
+      "pattern": "^https://www\\.instagram\\.com/asteroidcrib729/?$"
     }
   ]
 }

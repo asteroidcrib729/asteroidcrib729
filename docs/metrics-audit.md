@@ -165,6 +165,13 @@ other authors' commits to my account. Existing history has not been rewritten.
 
 ## Verification
 
+On November 1, 2026, Instagram returned HTTP 429 to the hosted link checker
+even after retries, while the same profile URL passed locally. I confirmed
+that the profile URL matches my public GitHub `socialAccounts` metadata.
+The link-check configuration excludes only that exact Instagram profile URL;
+other Instagram URLs remain checked. This exception does not prove ongoing
+availability, so I review the destination manually when changing it.
+
 The top badge links declare `target="_blank"` and `rel="noopener noreferrer"`
 in the README source. GitHub's Markdown renderer removes those attributes from
 the five destination links. I verified the rendered HTML through GitHub's
