@@ -61,5 +61,16 @@ These commands use Prettier's documented [local installation](https://prettier.i
 [CLI check/write modes](https://prettier.io/docs/cli), and
 [generated-content exclusions](https://prettier.io/docs/ignore).
 
-The local setup and checks are verified before publication. A fresh hosted
-workflow run is still required after these files are committed and pushed.
+I verify formatting locally before pushing and monitor the
+[hosted workflow runs](https://github.com/asteroidcrib729/asteroidcrib729/actions/workflows/prettier.yml)
+for the published revision. Local success and hosted CI success are separate checks.
+
+## License
+
+I release the original formatter configuration, scripts, and documentation under
+the repository's [MIT License](../LICENSE). My [NOTICE](../NOTICE) records author
+and source attribution, including the preserved upstream ranking-code notice.
+The `MIT` identifier is also declared in `package.json` and the npm lockfile.
+The package stays `private` to prevent npm publication; this does not change the
+repository's open-source license. Prettier retains its own MIT license in the
+installed dependency.

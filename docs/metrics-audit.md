@@ -111,8 +111,8 @@ blank. With no pinned repositories, the table contains only its column headings;
 the updater does not substitute popular repositories or retain unpinned projects.
 
 The existing metrics workflow runs this updater after generating the cards and
-lints the generated README before committing. Once deployed, pinning, unpinning,
-reordering pins, or editing a pinned repository's description will update the
+lints the generated README before committing. Pinning, unpinning,
+reordering pins, or editing a pinned repository's description updates the
 table on the next successful 12-hour refresh. I can also run the workflow manually.
 There are two asset refresh workflows, the validation workflow, and the separate
 Prettier workflow. Featured Projects needs no additional card hosting dependency.
@@ -205,5 +205,23 @@ npx --yes markdown-link-check@3.15.0 --config .markdown-link-check.json docs/met
 
 For local generation I use an authenticated GitHub CLI or a `GH_TOKEN` environment
 variable. Hosted generation uses the workflow's `GITHUB_TOKEN`; no personal token
-is stored in this repository. These workflow changes still need to be pushed
-and observed in a fresh hosted run before claiming hosted acceptance.
+is stored in this repository. The workflows are deployed; their
+[hosted run history](https://github.com/asteroidcrib729/asteroidcrib729/actions)
+records CI results. Each new published revision still needs its own relevant
+successful workflow runs before I claim hosted acceptance.
+
+## License and documentation maintenance
+
+On November 1, 2026, I added the repository's [MIT License](../LICENSE) for my
+original source code and documentation and recorded author/source attribution
+in [NOTICE](../NOTICE). `package.json` and the npm lockfile identify the license
+as `MIT`. The existing [GitHub Readme Stats MIT notice](../.github/scripts/LICENSE.github-readme-stats)
+remains intact for the adapted ranking calculation. Dependencies, featured
+repositories, externally hosted badges and banners, and third-party logos retain
+their respective licenses and terms.
+
+The October 25 figures above remain a historical audit snapshot. The generated
+cards and JSON carry their own refresh timestamps, and Featured Projects follows
+the current profile pins. The card images use adjacent 49% widths, omit visible
+headings while retaining accessible titles, and center both footer lines.
+The [formatting guide](formatting.md) describes the deployed local and CI tooling.

@@ -2,6 +2,12 @@
   "name": "asteroidcrib729-profile",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "Faraz Hussain (asteroidcrib729)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asteroidcrib729/asteroidcrib729.git"
+  },
   "engines": {
     "node": ">=24"
   },

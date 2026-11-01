@@ -140,6 +140,19 @@ Generated asset commits use my account as author and GitHub Actions as committer
 
 ---
 
+## License and attribution
+
+I release this repository's original source code and documentation under the
+[MIT License](LICENSE), copyright © 2026 Faraz Hussain. Copies or substantial
+portions must retain the copyright and permission notice.
+
+My [NOTICE](NOTICE) records the original author and source repository. The adapted
+ranking calculation retains its [upstream MIT notice](.github/scripts/LICENSE.github-readme-stats).
+Featured repositories, third-party dependencies, externally hosted badges and
+banners, and third-party logos retain their respective licenses and terms.
+
+---
+
 <div align="center">
   <sub>⭐️ Profile designed & crafted by <a href="https://github.com/asteroidcrib729">Faraz Hussain</a></sub>
 </div>
