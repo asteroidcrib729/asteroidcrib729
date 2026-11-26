@@ -1,12 +1,12 @@
 {
   "username": "asteroidcrib729",
   "year": 2026,
-  "generatedAt": "2026-11-26T08:31:03.481Z",
+  "generatedAt": "2026-11-26T21:40:16.245Z",
   "from": "2026-01-01T00:00:00Z",
-  "to": "2026-11-26T08:31:03.481Z",
+  "to": "2026-11-26T21:40:16.245Z",
   "scope": "Public activity; languages and stars from owned public non-fork repositories",
   "activity": {
-    "totalCommitContributions": 926,
+    "totalCommitContributions": 933,
     "totalPullRequestContributions": 61,
     "totalIssueContributions": 0,
     "totalPullRequestReviewContributions": 0,
@@ -14,7 +14,7 @@
     "totalRepositoriesWithContributedCommits": 22,
     "restrictedContributionsCount": 0,
     "contributionCalendar": {
-      "totalContributions": 1003
+      "totalContributions": 1010
     }
   },
   "stars": 1,
@@ -23,21 +23,21 @@
     "method": "GitHub Readme Stats legacy formula; calendar-year commits",
     "source": "https://github.com/anuraghazra/github-readme-stats/blob/4b656ebabb8cb866d08bd010df29845372027018/src/calculateRank.js",
     "inputs": {
-      "totalCommits": 926,
+      "totalCommits": 933,
       "totalRepos": 23,
       "contributions": 1,
-      "followers": 60,
+      "followers": 58,
       "prs": 61,
       "issues": 0,
       "stargazers": 1
     },
     "level": "A+",
-    "score": 48.14273362282056
+    "score": 48.12436094092944
   },
   "languages": [
     {
       "name": "Python",
-      "bytes": 2845509
+      "bytes": 2885856
     },
     {
       "name": "Jupyter Notebook",
@@ -61,7 +61,11 @@
     },
     {
       "name": "PowerShell",
-      "bytes": 236774
+      "bytes": 264838
+    },
+    {
+      "name": "Shell",
+      "bytes": 165430
     },
     {
       "name": "CSS",
@@ -82,10 +86,6 @@
     {
       "name": "Inno Setup",
       "bytes": 5538
-    },
-    {
-      "name": "Shell",
-      "bytes": 4496
     },
     {
       "name": "NSIS",
