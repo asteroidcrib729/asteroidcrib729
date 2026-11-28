@@ -150,9 +150,10 @@ and `GIT_COMMITTER_*` explicitly so bot execution retains owner authorship.
 GitHub's [contribution criteria](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference)
 require an account-linked author email and an eligible branch in a standalone
 repository. The live repository is standalone, defaults to `main`, and reported
-`has_pages: false` during this audit. Publishing future snake commits to `main`
-meets the branch requirement without enabling a Pages site. The historical
-`gh-pages` branch remains intact.
+`has_pages: false` during this audit. Publishing snake commits to `main` meets
+the branch requirement without enabling a Pages site. On November 28, 2026, the
+superseded legacy asset branches (`gh-pages` and `output`) were deleted, leaving
+`main` as the sole repository branch.
 
 Workflow runs do not themselves count as commits. The publishing steps skip
 commits when there are no staged changes. Commits by other people retain their
