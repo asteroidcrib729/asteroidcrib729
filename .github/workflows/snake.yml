@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 # Credit the repository owner while recording the automation as committer.
 env:
   GIT_AUTHOR_NAME: Faraz Hussain
@@ -22,7 +25,7 @@ concurrency:
 jobs:
   build:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       contents: write
@@ -31,6 +34,11 @@ jobs:
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
 
       - name: Generate Snake SVG
         uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
@@ -48,5 +56,5 @@ jobs:
           git add -- assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: update contribution snake"
-            git push origin HEAD:main
+            node .github/scripts/push-with-retry.mjs origin HEAD:main
           fi

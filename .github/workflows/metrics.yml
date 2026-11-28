@@ -37,6 +37,11 @@ jobs:
         with:
           ref: main
 
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+
       - name: Test profile generation and attribution
         run: node --test .github/scripts/*.test.mjs
 
@@ -58,5 +63,5 @@ jobs:
           git add -- README.md assets/github-stats.svg assets/github-languages.svg assets/github-metrics.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh GitHub metrics and pinned projects"
-            git push origin HEAD:main
+            node .github/scripts/push-with-retry.mjs origin HEAD:main
           fi

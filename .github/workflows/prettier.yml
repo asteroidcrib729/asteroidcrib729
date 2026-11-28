@@ -82,5 +82,5 @@ jobs:
           git add --update
           if ! git diff --cached --quiet; then
             git commit -m "style: apply Prettier formatting"
-            git push origin HEAD:main
+            node .github/scripts/push-with-retry.mjs origin HEAD:main
           fi
